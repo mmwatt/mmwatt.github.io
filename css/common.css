@@ -1,0 +1,61 @@
+
+/* Custom Styles */
+.header-img {
+  width: 100vw;
+  position: relative;
+  max-width: 100vw;
+}
+
+.header-img img {
+  width: 100%;
+}
+
+.my-link {
+  font-weight: bold;
+  color: black !important;
+  text-decoration: underline dotted;
+}
+
+.h3, h3 {
+  font-size: 1.5rem;
+}
+
+.h4, h4 {
+  font-size: 1.25rem;
+}
+
+/* Bootstrap Customisations */
+.navbar-light.navbar-toggler {
+  border-style: none !important;
+}
+
+/* Bootstrap Small */
+@media only screen and (min-width: 576px) {
+  .main-content {
+    width: 85%;
+  }    
+}
+
+/* Bootstrap Medium */
+@media only screen and (min-width: 768px) {
+  .main-content {
+    width: 70%;
+  }
+}
+
+/* Bootstrap Large */
+@media only screen and (min-width: 992px) {
+  /* .main-content {
+    width: 60%;
+  } */
+}
+
+/* Bootstrap Extra Large */
+@media only screen and (min-width: 1200px) {
+  .main-content {
+    width: 700px;
+  }
+  .header-img {
+    width: 1200px;
+  }
+}
