@@ -25,3 +25,17 @@
     width: 650px;
   }
 }
+
+/* Custom Styles */
+.header-img img {
+  width: inherit;
+  height: auto;
+}
+
+.my-link {
+  font-weight: bold;
+  color: black !important;
+  text-decoration: underline dotted;
+}
+
+/* CUSTOM BOOTSTRAP THEME */
