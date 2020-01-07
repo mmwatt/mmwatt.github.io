@@ -17,13 +17,14 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <!-- Custom Styles -->
+  <link rel="stylesheet" href="../css/common.css">
   <title>Matthew Watt - Projects - Dissertation</title>
 </head>
 <body>
   <nav class="navbar navbar-expand-sm navbar-light bg-light">
     <a class="navbar-brand" href="../">Matthew Watt</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <i class="fas fa-bars"></i>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
@@ -32,6 +33,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="../about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../music.html">Music</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -50,21 +54,28 @@
       </ul>
     </div>
   </nav>
-  <main>
-    <h1>Projects - Dissertation</h1>
-    <h2>Automated Bug-Fixing of Website Layouts</h2>
+  <main class="container">
+    <h1 class="text-center">Projects - Dissertation</h1>
+    <h2 class="text-center">Automated Bug-Fixing of Website Layouts</h2>
     <p>
-      Original idea and supervised by <a href="https://mcminn.io">Phil McMinn</a>
+      Original idea and supervised by <a href="https://mcminn.io" class="my-link">Phil McMinn</a>.
     </p>
-    <h3>Abstract:</h3>
+    <h3 class="text-center">Abstract:</h3>
     <p>
         The world wide web is becoming an increasingly large part of people’s lives and they are accessing it in increasingly diverse ways; through mobile phones, tablets, laptops and desktop PCs with various different browsers. It is therefore difficult for developers to account for these differences when designing a website. This project aims to produce a system which allows them to write a specification for a website, which should be able to fix problems quickly and easily, using search-based techniques, enabling them to spend more time on the content of the website, instead of the minor details of layout bugs.
     </p>
-    <h3>The Solution:</h3>
+    <h3 class="text-center">The Solution:</h3>
     <p>
-      The program was written in Java, using the internal API from the <a href="http://galenframework.com/">Galen Framework</a>, which allows for the checking of webpages against an easily readable specification. The program then uses its own internal representation of the webpage and stylesheet to trial different CSS changes, producing a 'patch' of the most successful ones (that fix errors detected by Galen).
+      The program was written in Java, using the internal API from the <a href="http://galenframework.com/" class="my-link">Galen Framework</a>, which allows for the checking of webpages against an easily readable specification. The program then uses its own internal representation of the webpage and stylesheet to trial different CSS changes, producing a 'patch' of the most successful ones (that fix errors detected by Galen).
+    </p>
+    <p>
+      More details available on <a href="../contact.html" class="my-link">request</a>.
     </p>
   </main>
+  <hr>
+  <footer>
+    <p class="text-center"><small class="text-muted">&copy;Matthew Watt 2020</small></p>
+  </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
