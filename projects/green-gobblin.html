@@ -29,7 +29,7 @@
   <meta name="theme-color" content="#ffffff">
   <!-- Custom Styles -->
   <link rel="stylesheet" href="../css/common.css">
-  <title>Matthew Watt - Projects - MIDI Synth</title>
+  <title>Matthew Watt - Projects - Green Gobblin</title>
 </head>
 <body>
   <nav class="navbar navbar-expand-sm navbar-light bg-light">
@@ -55,9 +55,9 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="./banki.html">Banki</a>
             <a class="dropdown-item" href="./dissertation.html">Dissertation</a>
-            <a class="dropdown-item" href="./green-gobblin.html">Green Gobblin'</a>
+            <a class="dropdown-item active" href="./green-gobblin.html">Green Gobblin'<span class="sr-only">(current)</span></a>
             <a class="dropdown-item" href="./software-hut.html">Software Hut</a>
-            <a class="dropdown-item active" href="./midi-synth.html">MIDI Synth <span class="sr-only">(current)</span></a>
+            <a class="dropdown-item" href="./midi-synth.html">MIDI Synth</a>
           </div>
         </li>
         <li class="nav-item">
@@ -67,23 +67,20 @@
     </div>
   </nav>
   <main class="container">
-    <h1 class="text-center">Projects - Embedded MIDI Synth (University Project)</h1>
-    <h2 class="text-center">Completed as part of IoT module at UoS</h2>
-    <p>
-      This project aimed to use our provided equipment (an <a href="https://unphone.net/the-unphone/" class="my-link">unPhone</a>) to create a mobile synthesizer and MIDI file player. You can load MIDI files onto the device's SD card, and select them from a list to play them, or enter 'synthesizer mode', and play notes using the MIDI synth on the device's sound chip.
-    </p>
-    <p>
-      We ran into some interesting issues during development: The sound chip on the unPhone was connected to an extended bus, instead of being directly connected to pins on the ESP32. This required us to modify its drivers so the sound chip could be addressed properly by the ESP32, and so it wouldn't be interrupted by other devices communicating on the extended bus.
-    </p>
-    <p>
-      I mainly focused on the UI elements of the project, which required the construction of a lightweight UI framework that wouldn't interrupt the realtime sound processing. This framework allowed a programmer to define a button's position, text, size, and an 'action', from which the framework code could draw the button on the screen, and check if it had been pressed. Normally this would cause an interruption in the sound being played, but we were able to sufficiently separate those components so they would not interfere with one another.
-    </p>
+    <h1 class="text-center">Projects - Green Gobblin'</h1>
+    <h3 class="text-center">4th Year Integrated Masters Project</a></h3>
+    <p>Built as part of the group project module <a href="http://www.dcs.shef.ac.uk/intranet/teaching/public/modules/level4/com4525.html" class="my-link">Genesys</a> at the University of Sheffield, the aim of this website was to encourage people to think more about the impact different lifestyles can have on our planet.</p>
+    <p>Green Gobblin' is a recipe sharing website where you can create, view, search for and comment on recipes, as you might expect from a number of similar sites. The twist here is that your recipe's CO2 impact will be measured and scored based on how many kilograms of CO2 are generated per kilogram of food.</p>
+    <p>The user is given categories for each ingredient they add to a recipe, which corresponded to the dataset we used for calculating climate impact. We then give a breakdown including the score for the whole recipe, as well as how much an individual ingredient contributes towards it.</p>
+    <p>Development was completed under an iterative Agile process with 2-week sprints, with regular standups and a kanban board for task management and assigning work. Although we were instructed to use Agile as part of the module, I feel we truly embraced it. We had defined criteria for moving through each column in the kanban board and effectively split our work up into manageable user stories. We prioritised stories based on their impact to the user and although we didn't complete every feature we envisioned at the start, the final product was still feature-rich and stable.</p>
+    <p>Within the module, we were tasked with generating ideas based on a choice of prompt ('Helping people make their lives more sustainable'), conducting customer research, and planning how the website could function in the 'real world' as a business. Having produced a landing page and again analysing how users responded to the idea, we spent our second semester producing a usable version of the website.</p>
+    <p>The site is built in Rails 6, with a PostgreSQL database. We made extensive use of both unit testing with RSpec and end-to-end testing with Capybara, so much so that we needed to request a longer timeout for our CI builds! The frontend layout makes use of Bootstrap 4, with libraries like cocoon and simple_form enabling us to produce it in the time constraint.</p>
+    <p>We attained a 1st-class grade for the project, and it was one of the most fulfilling parts of my 4th year!</p>
   </main>
   <hr>
   <footer>
     <p class="text-center"><small class="text-muted">&copy; 2020 Matthew Watt</small></p>
   </footer>
-<!-- TODO Link to the unphone code and add some pictures. -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
